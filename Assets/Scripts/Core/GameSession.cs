@@ -57,6 +57,17 @@ public class GameSession : MonoBehaviour
         OnStreakChange?.Invoke();
     }
 
+    public void ResetSession()
+    {
+        _record = 0;
+        _current = 0;
+        _currentStreak = 0;
+
+        OnRecordChange?.Invoke();
+        OnPointsChange?.Invoke();
+        OnStreakChange?.Invoke();
+    }
+
     private void OnDestroy()
     {
         PlayerPrefs.Save();

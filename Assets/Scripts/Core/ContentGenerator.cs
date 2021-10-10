@@ -13,6 +13,8 @@ public class ContentGenerator : MonoBehaviour
     private Button _button;
     [SerializeField]
     private GameSession _session;
+    [SerializeField]
+    private AudioSource _audio;
 
     private Cell[,] _gridCells = new Cell[3, 3];
     private bool _won = false;
@@ -49,12 +51,16 @@ public class ContentGenerator : MonoBehaviour
         }
         CheckCells();
         _session.IncreaseStreak();
+        _button.interactable = true;
 
         if (!_won)
         {
             _session.SetPoints(0);
         }
-        _button.interactable = true;
+        else
+        {
+            _audio.Play();
+        }
     }
 
     private void CheckCells()
