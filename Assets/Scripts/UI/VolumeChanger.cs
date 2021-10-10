@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(-1)]
 public class VolumeChanger : MonoBehaviour
 {
     [SerializeField]
@@ -39,7 +40,6 @@ public class VolumeChanger : MonoBehaviour
     private void ChangeVolume(float value)
     {
         _mixer.SetFloat(_mixerParameter, value);
-        print(value);
         PlayerPrefs.SetFloat(_mixerParameter, value);
     }
 }
