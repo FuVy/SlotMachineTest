@@ -9,7 +9,7 @@ public class PointsOutput : MonoBehaviour
     private TMP_Text _current, _record;
 
     [SerializeField]
-    private GameSession _session;
+    private OldGameSession _session;
 
     private void Awake()
     {

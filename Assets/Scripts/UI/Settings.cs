@@ -3,7 +3,7 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     [SerializeField]
-    private GameSession _session;
+    private OldGameSession _session;
     [SerializeField]
     private GameObject _menu;
 

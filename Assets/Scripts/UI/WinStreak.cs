@@ -13,7 +13,7 @@ public class WinStreak : MonoBehaviour
     [SerializeField]
     private Slider _slider;
     [SerializeField]
-    private GameSession _session;
+    private OldGameSession _session;
 
     private void Awake()
     {

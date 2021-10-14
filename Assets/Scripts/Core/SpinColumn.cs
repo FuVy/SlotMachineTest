@@ -27,7 +27,7 @@ public class SpinColumn : MonoBehaviour
     {
         for (int i = 0; i < _cells.Length; i++)
         {
-            _cells[i].StartSpinning(-_travelDistance, i, .5f, 3);
+            _cells[i].StartSpinning(-_travelDistance, i, .15f, 5);
         }
     }
 }

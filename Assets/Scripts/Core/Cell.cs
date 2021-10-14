@@ -21,13 +21,17 @@ public class Cell : MonoBehaviour
 
     private void Awake()
     {
-        _transform = GetComponent<RectTransform>();
+        _transform = (RectTransform)_item.transform;
     }
 
     public void SetItem(ItemData data)
     {
         _item.SetItem(data);
-        SetColor(_defaultColor);
+    }
+
+    private void Generate()
+    {
+        SetItem(GameSession.Collection.RandomItem());
     }
 
     public void SetWinColor()
@@ -46,7 +50,7 @@ public class Cell : MonoBehaviour
         {
             _transform.DOLocalMoveY(-distance / 3 * (3 - index), 0f).OnComplete(() =>
             {
-                //Generate
+                Generate();
                 _transform.DOLocalMoveY(0f, time * (3 - index) / 2).SetEase(Ease.Linear).OnComplete(() =>
                 {
                     if (times > 1)
