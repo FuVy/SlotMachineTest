@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-using System.Collections;
+using UnityEngine.Events;
 
 public class Cell : MonoBehaviour
 {
@@ -18,14 +18,10 @@ public class Cell : MonoBehaviour
     public ItemHolder Item => _item;
 
     private RectTransform _transform;
-    private LayoutElement _layoutElement;
-    private Vector3 _initialLocation;
 
     private void Awake()
     {
         _transform = GetComponent<RectTransform>();
-        _initialLocation = _transform.position;
-        _layoutElement = GetComponent<LayoutElement>();
     }
 
     public void SetItem(ItemData data)
@@ -44,16 +40,20 @@ public class Cell : MonoBehaviour
         _image.DOColor(color, 0.3f);
     }
 
-    public void StartSpinning(float distance, float time)
+    public void StartSpinning(float distance, int index, float time, int times)
     {
-        //StartCoroutine(HandleSpinning(distance, time));
-        _layoutElement.ignoreLayout = true;
-        _transform.DORewind();
-        _transform.DOLocalMoveY(distance, time).SetEase(Ease.Linear).OnComplete(() =>
+        _transform.DOLocalMoveY(distance / 3 * (index + 1), time * (index + 1) / 2).SetEase(Ease.Linear).OnComplete(() =>
         {
-            _transform.DOMoveY(3f, 0f).OnComplete(() =>
+            _transform.DOLocalMoveY(-distance / 3 * (3 - index), 0f).OnComplete(() =>
             {
-                _transform.DOLocalMoveY(0f, time).SetEase(Ease.Linear);
+                //Generate
+                _transform.DOLocalMoveY(0f, time * (3 - index) / 2).SetEase(Ease.Linear).OnComplete(() =>
+                {
+                    if (times > 1)
+                    {
+                        StartSpinning(distance, index, time, times - 1);
+                    }
+                });
             });
         });
     }
