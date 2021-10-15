@@ -3,10 +3,12 @@ using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
 
-public class SpinColumn : MonoBehaviour
+public class Column : MonoBehaviour
 {
     [SerializeField]
     private Cell[] _cells;
+    public Cell[] Cells => _cells;
+
     [SerializeField]
     private float _travelDistance;
 
@@ -20,14 +22,18 @@ public class SpinColumn : MonoBehaviour
         yield return new WaitForEndOfFrame();
         var rect = (RectTransform)transform;
         _travelDistance = rect.rect.height / 4 * 3;
-        print(_travelDistance);
     }
 
     public void Spin()
     {
+        Spin(0.15f, 5);
+    }
+
+    public void Spin(float time, int times)
+    {
         for (int i = 0; i < _cells.Length; i++)
         {
-            _cells[i].StartSpinning(-_travelDistance, i, .15f, 5);
+            _cells[i].StartSpinning(-_travelDistance, i, time, times);
         }
     }
 }

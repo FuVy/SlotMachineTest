@@ -2138,7 +2138,7 @@ GameObject:
   - component: {fileID: 652552690}
   - component: {fileID: 652552689}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Spin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2208,56 +2208,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 106147873}
-        m_TargetAssemblyTypeName: SpinColumn, Assembly-CSharp
-        m_MethodName: Spin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 616985903}
-        m_TargetAssemblyTypeName: SpinColumn, Assembly-CSharp
-        m_MethodName: Spin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 186500894}
-        m_TargetAssemblyTypeName: SpinColumn, Assembly-CSharp
-        m_MethodName: Spin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 90572444}
-        m_TargetAssemblyTypeName: SpinColumn, Assembly-CSharp
-        m_MethodName: Spin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1039597609}
-        m_TargetAssemblyTypeName: SpinColumn, Assembly-CSharp
+      - m_Target: {fileID: 1806555320}
+        m_TargetAssemblyTypeName: CasinoManager, Assembly-CSharp
         m_MethodName: Spin
         m_Mode: 1
         m_Arguments:
@@ -3506,12 +3458,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62da34e8c31bb4a439d1a3b073916274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cells:
-  - {fileID: 460979045}
-  - {fileID: 639009162}
-  - {fileID: 638846612}
-  - {fileID: 587927516}
+  _spinTime: 0.15
+  _spinQuantity: 5
+  _columnsSpinDifference: 0.2
+  _columns:
+  - {fileID: 106147873}
+  - {fileID: 616985903}
+  - {fileID: 186500894}
+  - {fileID: 90572444}
+  - {fileID: 1039597609}
+  _button: {fileID: 652552689}
   _collection: {fileID: 11400000, guid: b25ced62efa2c62448d854a4c1d5808e, type: 2}
+  _lines:
+  - {fileID: 11400000, guid: a03e98c4358d26447b763e7a63b1ba64, type: 2}
+  - {fileID: 11400000, guid: d55f0c408ad5f72419a9be003d8fbab6, type: 2}
+  - {fileID: 11400000, guid: 6a5c439f9448c214ab476da176d02305, type: 2}
+  - {fileID: 11400000, guid: 5841e97d0c0c55a44878141a1cfbf9ac, type: 2}
+  - {fileID: 11400000, guid: 6d899ee9145a5dc45806f9ec56c816f7, type: 2}
+  - {fileID: 11400000, guid: 098a538dad38e0f41bd444654ef01a7d, type: 2}
+  - {fileID: 11400000, guid: 496526a785e460d48938e3ee034b18d9, type: 2}
+  - {fileID: 11400000, guid: 6f84a4289ab6b4b448ebc977ebd597ee, type: 2}
+  - {fileID: 11400000, guid: b91b2a49b16196549a3093e01e539bc5, type: 2}
+  - {fileID: 11400000, guid: 6a6aae113da5ff14f9ea98970a4d9811, type: 2}
+  - {fileID: 11400000, guid: 31a0cb242e5539e40a3419b6113a2be8, type: 2}
+  - {fileID: 11400000, guid: ce8d59a3ce4d7ec48b592344e56cdb36, type: 2}
+  - {fileID: 11400000, guid: 70104f96aede72644ac94837db57a34c, type: 2}
+  - {fileID: 11400000, guid: 4536f1d488b70ab45bd388905d0c4755, type: 2}
+  - {fileID: 11400000, guid: 0d304f2c80b7b4b4b86bc8611a466218, type: 2}
 --- !u!1001 &2034519827
 PrefabInstance:
   m_ObjectHideFlags: 0

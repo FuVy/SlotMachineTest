@@ -10,6 +10,14 @@ public class ItemData : ScriptableObject
     public Sprite Sprite => _sprite;
 
     [SerializeField]
-    private int _reward = 50;
-    public int Reward => _reward;
+    private int[] _rewards = new int[5];
+    public int[] Rewards => _rewards;
+
+    private void OnValidate()
+    {
+        if (_rewards.Length != 5)
+        {
+            _rewards = new int[5];
+        }
+    }
 }

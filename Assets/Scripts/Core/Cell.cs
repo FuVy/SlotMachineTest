@@ -34,16 +34,6 @@ public class Cell : MonoBehaviour
         SetItem(GameSession.Collection.RandomItem());
     }
 
-    public void SetWinColor()
-    {
-        SetColor(_winColor);
-    }
-
-    private void SetColor(Color color)
-    {
-        _image.DOColor(color, 0.3f);
-    }
-
     public void StartSpinning(float distance, int index, float time, int times)
     {
         _transform.DOLocalMoveY(distance / 3 * (index + 1), time * (index + 1) / 2).SetEase(Ease.Linear).OnComplete(() =>

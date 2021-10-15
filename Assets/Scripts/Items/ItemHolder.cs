@@ -13,10 +13,5 @@ public class ItemHolder : MonoBehaviour
     {
         Data = data;
         _image.sprite = Data.Sprite;
-        //_image.DOFade(0, 0.2f).OnComplete(() =>
-        //{
-        //    _image.sprite = Data.Sprite;
-        //    _image.DOFade(1f, 0.2f);
-        //});
     }
 }

@@ -92,9 +92,9 @@ public class OldContentGenerator : MonoBehaviour
             _won = true;
             foreach (Cell cell in cells)
             {
-                cell.SetWinColor();
+                //cell.SetWinColor();
             }
-            _session.AddPoints(cells[0].Item.Data.Reward);
+            //_session.AddPoints(cells[0].Item.Data.Reward);
         }
     }
 }
