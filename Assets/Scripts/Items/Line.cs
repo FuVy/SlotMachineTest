@@ -11,8 +11,8 @@ public class Line : ScriptableObject
     public Vector2Int[] Indexes => _indexes;
 
     [SerializeField]
-    private Color _color;
-    public Color Color => _color;
+    private Gradient _color;
+    public Gradient Color => _color;
 
     private void OnValidate()
     {

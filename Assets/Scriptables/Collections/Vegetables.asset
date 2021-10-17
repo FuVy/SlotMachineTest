@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fef7f5d2ce585d4d8e56de55dac3556, type: 3}
   m_Name: Vegetables
   m_EditorClassIdentifier: 
+  _icon: {fileID: 21300000, guid: 9445271c1f64a394fbd1c8ff85fe320b, type: 3}
   _items:
   - {fileID: 11400000, guid: 9765202e54f398746a9895b0837ab926, type: 2}
   - {fileID: 11400000, guid: 8ba40635fd1ee6e488d12cb454bbd653, type: 2}

@@ -22,6 +22,7 @@ public class Cell : MonoBehaviour
     private void Awake()
     {
         _transform = (RectTransform)_item.transform;
+        _item.DisableIcon();
     }
 
     public void SetItem(ItemData data)
@@ -50,5 +51,17 @@ public class Cell : MonoBehaviour
                 });
             });
         });
+    }
+
+    public void SetColor(bool won)
+    {
+        if (won)
+        {
+            _image.color = _winColor;
+        }
+        else
+        {
+            _image.color = _defaultColor;
+        }
     }
 }

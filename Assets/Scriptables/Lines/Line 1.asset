@@ -18,3 +18,32 @@ MonoBehaviour:
   - {x: 2, y: 1}
   - {x: 3, y: 1}
   - {x: 4, y: 1}
+  _color:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0.5087234, b: 0, a: 1}
+    key2: {r: 0.99975157, g: 1, b: 0.18823528, a: 0}
+    key3: {r: 0.41889766, g: 1, b: 0.34901965, a: 0}
+    key4: {r: 0, g: 0.91935205, b: 1, a: 0}
+    key5: {r: 0, g: 0.098634005, b: 1, a: 0}
+    key6: {r: 1, g: 0, b: 0.9118242, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 11951
+    ctime2: 21974
+    ctime3: 31611
+    ctime4: 41441
+    ctime5: 52428
+    ctime6: 65535
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 7
+    m_NumAlphaKeys: 2

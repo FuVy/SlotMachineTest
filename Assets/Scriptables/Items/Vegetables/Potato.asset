@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Potato
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: 9445271c1f64a394fbd1c8ff85fe320b, type: 3}
-  _rewards: 00000000000000003200000096000000f9010000
+  _rewards:
+  - 0
+  - 0
+  - 0.1
+  - 0.3
+  - 1.2

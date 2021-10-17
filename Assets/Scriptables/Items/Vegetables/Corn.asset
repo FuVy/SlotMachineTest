@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Corn
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: fd158c84443c9ce4cb67d41b52dfd337, type: 3}
-  _rewards: 00000000000000003200000096000000f4010000
+  _rewards:
+  - 0
+  - 0
+  - 0.1
+  - 0.3
+  - 1.2

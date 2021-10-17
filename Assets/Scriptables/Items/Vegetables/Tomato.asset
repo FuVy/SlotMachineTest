@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Tomato
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: c8473e6ae7567764fbf8a101abb019ee, type: 3}
-  _rewards: 00000000000000003200000096000000f4010000
+  _rewards:
+  - 0
+  - 0
+  - 0.1
+  - 0.3
+  - 1.2

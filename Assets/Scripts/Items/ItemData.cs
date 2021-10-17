@@ -10,14 +10,14 @@ public class ItemData : ScriptableObject
     public Sprite Sprite => _sprite;
 
     [SerializeField]
-    private int[] _rewards = new int[5];
-    public int[] Rewards => _rewards;
+    private float[] _rewards = new float[5];
+    public float[] Rewards => _rewards;
 
     private void OnValidate()
     {
         if (_rewards.Length != 5)
         {
-            _rewards = new int[5];
+            _rewards = new float[5];
         }
     }
 }

@@ -6,6 +6,10 @@ using UnityEngine;
 public class Collection : ScriptableObject
 {
     [SerializeField]
+    private Sprite _icon;
+    public Sprite Icon => _icon;
+
+    [SerializeField]
     private ItemData[] _items;
     public ItemData[] Items => _items;
 

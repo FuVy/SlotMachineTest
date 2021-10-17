@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 
 public class ItemHolder : MonoBehaviour
 {
@@ -11,7 +10,13 @@ public class ItemHolder : MonoBehaviour
 
     public void SetItem(ItemData data)
     {
+        _image.enabled = true;
         Data = data;
         _image.sprite = Data.Sprite;
+    }
+
+    public void DisableIcon()
+    {
+        _image.enabled = false;
     }
 }
